@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de Alumnos</title>
+
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Registro de Alumnos</h1>
+
+        <form id="formulario">
+
+            <label for="noControl">Número de Control</label>
+            <input type="text"
+                   id="noControl"
+                   placeholder="Ej. 21280001"
+                   required>
+
+            <label for="nombre">Nombre(s)</label>
+            <input type="text"
+                   id="nombre"
+                   placeholder="Escribe el nombre"
+                   required>
+
+            <label for="apellidoPaterno">Apellido Paterno</label>
+            <input type="text"
+                   id="apellidoPaterno"
+                   placeholder="Escribe el apellido paterno"
+                   required>
+
+            <label for="apellidoMaterno">Apellido Materno</label>
+            <input type="text"
+                   id="apellidoMaterno"
+                   placeholder="Escribe el apellido materno"
+                   required>
+
+            <label for="carrera">Carrera</label>
+            <input type="text"
+                   id="carrera"
+                   placeholder="Escribe la carrera"
+                   required>
+
+            <button type="submit">
+                Guardar
+            </button>
+
+        </form>
+
+        <h2>Alumnos registrados</h2>
+
+        <div id="lista"></div>
+
+    </main>
+
+    <script src="students.js"></script>
+
+</body>
+
+</html>
